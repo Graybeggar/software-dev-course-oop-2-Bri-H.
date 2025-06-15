@@ -69,7 +69,7 @@ public class LemonadeStand {
     //
     // HINT: You can copy and paste the body of the sellLemonade method and should only need to modify the first line.
     public boolean sellLemonade(int lemons, int sugar, int ice) {
-        Lemonade lemonade = new Lemonade();
+        Lemonade lemonade = new Lemonade(lemons, sugar, ice);
 
         if (tryMakingLemonade(lemonade) != null) {
             money += calculateSale(lemonade);
